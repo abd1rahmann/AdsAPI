@@ -1,31 +1,38 @@
-AdsAPI
-AdsAPI is a simple ASP.NET Core Web API project for managing ads. It follows a clean and modular architecture, making it easy to understand and extend.
+# 📢 AdsAPI
 
-🚀 Features
-RESTful API using ASP.NET Core
+**AdsAPI** is a simple ASP.NET Core Web API for managing ads. It follows clean architecture principles and is designed to be easy to understand and extend.
 
-Clean architecture principles
+---
 
-Entity Framework Core for database access
+## 🚀 Features
 
-🛠️ Getting Started
-Prerequisites
-.NET 8
-SQL Server, PostgreSQL, or another compatible database
+- ✅ RESTful API using ASP.NET Core
+- ✅ Clean architecture principles
+- ✅ Entity Framework Core for database access
 
-Setup
-Clone the repository: https://github.com/abd1rahmann/AdsAPI.git
-Update-Database in nuget package manager
+---
 
+## 🛠️ Getting Started
 
-📁 Project Structure
-bash
-Kopiera
-Redigera
+### ✅ Prerequisites
+
+- [.NET 8 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/8.0)
+- SQL Server, PostgreSQL, or another EF Core compatible database
+
+### ⚙️ Setup Instructions
+
+1. **Clone the repository:**
+   https://github.com/abd1rahmann/AdsAPI.git'
+   Update-Database in package manager console
+
+## 📁 Project Structure
+
+```plaintext
 AdsAPI/
-├── Controllers/         # API endpoints
-├── Models/              # Domain models
-├── Data/                # DbContext and EF migrations
-├── DTOs/                # Data Transfer Objects
-├── appsettings.json     # Configuration file
-└── AdsAPI.sln           # Solution file
+├── Controllers/        # API endpoints
+├── Models/             # Domain models
+├── Data/               # DbContext and EF migrations
+├── DTOs/               # Data Transfer Objects
+├── appsettings.json    # Configuration file
+└── AdsAPI.sln          # Solution file
+
