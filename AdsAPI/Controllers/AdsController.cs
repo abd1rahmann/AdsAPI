@@ -48,24 +48,23 @@ namespace AdsAPI.Controllers
         }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> UpdateAd(int id, Ad ad)
+        public async Task<IActionResult> UpdateAd(int id, AdUpdateDto adDto)
         {
-            if (id != ad.Id) return BadRequest();
-
-            _context.Entry(ad).State = EntityState.Modified;
-
-            try
+            var ad = await _context.Ads.FindAsync(id);
+            if (ad == null)
             {
-                await _context.SaveChangesAsync();
+                return NotFound();
             }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!_context.Ads.Any(e => e.Id == id)) return NotFound();
-                throw;
-            }
+
+            ad.Title = adDto.Title;
+            ad.Description = adDto.Description;
+            ad.Price = adDto.Price;
+
+            await _context.SaveChangesAsync();
 
             return NoContent();
         }
+
 
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteAd(int id)
