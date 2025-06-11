@@ -1,4 +1,4 @@
-using AdsAPI.Data;
+using AdsData.Data;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);

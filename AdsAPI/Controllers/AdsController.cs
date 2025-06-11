@@ -1,6 +1,6 @@
-﻿using AdsAPI.Data;
-using AdsAPI.DTO;
-using AdsAPI.Models;
+﻿using AdsData.Data;
+using AdsData.DTO;
+using AdsData.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
