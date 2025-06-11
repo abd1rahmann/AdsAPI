@@ -23,7 +23,7 @@
 
 1. **Clone the repository:**
    https://github.com/abd1rahmann/AdsAPI.git'
-   Update-Database in package manager console
+   Press F5
 
 ## 📁 Project Structure
 
